@@ -209,9 +209,10 @@
 								<section>
 									<header>
 										<h3>BrainFlash</h3>
-										<p>Studying website inspired by Brainscape where users can create flashcards for easy access studying.
-											Constructed dynamic objects and components that interact for easier user interface to organize your flashcards by cards and decks.
-											Implemented an easy to use modal that connects with the state and id to create new decks and cards on the spot without refreshing.
+										<p> Studying website inspired by Brainscape where users can create flashcards for easy access studying.
+										Coded Active Record associations between User, Card, and Deck entities on a model level to provide easy structuring of JSON views for the backend to serve in response to HTTP requests from the frontend.
+										Implemented an onClick modal component that adds Cards and/or Decks and triggers an update state event to the index page, delivering a quick and easy flashcard maker.
+										Designed a study page that uses a hideComponent onClick function that changes the state of the viewable answer, giving the user a mental test of their material, making for easy effective studying.
 											<a href="https://brain-flash.herokuapp.com/" target="_blank">You Can Try it Out Here!</a>
 											<a href="https://github.com/ShawkiKased/BrainFlash" target="_blank">Visit the Repo Here!</a>
 										</p>
@@ -232,10 +233,9 @@
 									<header>
 										<h3>StoryQuest</h3>
 										<p>JavaScript text adventure game based around selection boxes with multiple paths and scenarios.
-											Executed a smooth and instant choice box that shifts around scenarios instantly with each button being attached to a
-											state and object for easy execution.
-											Defined an array containing objects of multiple story scenarios that are easily connected with Id’s and State that
-											carries over on refreshes and closes.
+										Executed a game logic that creates a tree-based choice box system using tree nodes as buttons, each of which corresponds to a unique Id that shifts the story scenario.
+										Defined an array-based data structure containing the story objects that each represents a scenario with its own options and id for button tree nodes to access and trigger the population of the appropriate scenario in the DOM.
+										Built a location object of background images used with an associated story object to render the proper background for the player’s current progress.
 											<a href="https://shawkikased.github.io/StoryQuest/" target="_blank" >You Can Play it Here!</a>
 											<a href="https://github.com/ShawkiKased/StoryQuest" target="_blank">Visit the Repo Here!</a>
 									    </p>
@@ -254,8 +254,9 @@
 									<header>
 										<h3>CrimeWatch</h3>
 										<p>A web application that allows Samaritans to report local crimes/incidents in their neighborhood.
-										Reports incidents very easily and seamlessly with an on the spot modal.
-										Produces spots on a google maps API to pinpoint the location of the report.
+										Constructed a check logged-in function to give the user either the login or report forms based on status.
+										Created an Incident Item component that takes the latitude, longitude, category of crime, and description inputs that are given in the Report Form and returns it properly labeled and pushed to the Incident Index object that displays the full list of reports to the front page.
+										Structured report with filler data to be used as a sample API response test on Google Map Location tracking, ensuring it works properly before implementing the report form.
 										Group Project with Chris Garthright and Mahmud Ahmed.
 										<a href="https://crime-watch.herokuapp.com/#/" target="_blank">You Can Try it Out Here!</a>
 										<a href="https://github.com/MahmudAhmed/CrimeWatch" target="_blank">Visit the Repo Here!</a>
